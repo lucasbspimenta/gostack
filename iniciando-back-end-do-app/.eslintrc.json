@@ -20,6 +20,7 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
+    "no-useless-constructor": "off",
     "class-methods-use-this": "off",
     "camelcase": "off",
     "prettier/prettier": "error",
@@ -29,6 +30,7 @@
         "argsIgnorePattern": "_"
       }
     ],
+    "@typescript-eslint/interface-name-prefix": [ "error", {"prefixWithI":"always"}],
     "import/extensions": [
       "error",
       "ignorePackages",
